@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href='https://fonts.googleapis.com/css?family=Fira+Sans:300italic,400italic,500italic|Source+Sans+Pro:400,700,300,200' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+      <header class="fit">
+        <h1>THE CODE REVIEW</h1>
+      </header>
+      <div class="banner">
+        <h1>Signup for our newsletter</h1>
+        <p>
+          Get the latest news on how your code is doing right in your inbox
+        </p>
+      </div>
+
+        <form action="index.html" method="post" class="extended" >
+          <fieldset class="contact_info">
+            <h1>Contact Information</h1>
+
+            <label for="full_name">Full Name</label>
+            <input type="text" id="full_name" name="user_name" placeholder="Required" disabled/>
+
+            <label for="email">Email Address</label>
+            <input type="text" id="email" name="user_email" placeholder="Required" disabled/>
+
+            <label for="phone_number">Phone Number</label>
+            <input type="text" id="phone" name="user_phone"/>
+
+            <label for="address">Street Address</label>
+            <input type="text" id="address" name="user_address"/>
+
+            <label for="city">City</label>
+            <input type="text" id="city" name="user_city"/>
+
+            <label for="state">State</label>
+            <select id="state" name="user_state">
+            <option value="choose_state">Choose State</option>
+            </select>
+
+            <label for="zip_code">Zip Code</label>
+            <input type="text" id="zip_code" name="user_zip"/>
+
+          </fieldset>
+
+          <fieldset >
+            <h1>Newsletter</h1>
+
+            <label>Select the newsletter you would like to recieve</label>
+            <input type="checkbox" id="html-news" value="newsletter_html" name="user_newsletter" /><label class="light" for="html_news">HTML News</label><br/>
+            <input type="checkbox" id="css-news" value="newsletter_html" name="user_newsletter" /><label class="light" for="css_news">CSS News</label><br/>
+            <input type="checkbox" id="Javascript-news" value="newsletter_html" name="user_newsletter" /><label class="light" for="javascript_news">Javascript News</label><br/>
+
+            <label>Newsletter format</label>
+            <input type="radio" id="html-format" value="newsletter_format" name="user_format" /><label class="light" for="html_format">HTML </label><br/>
+            <input type="radio" id="plain_text" value="newsletter_format" name="user_format" /><label class="light" for="plain_text">Plain text</label><br/>
+
+            <label for "suggestion">Other topics you'd like to hear about</label>
+            <textarea id="suggestion" name="user_suggestion" ></textarea>
+
+          </fieldset>
+
+          <button type="submit">Sign Up</button>
+
+        </form>
+      <footer class="extended">
+        <h3>Copyright The Code Review</h3>
+      </footer>
+    </body>
+</html>
